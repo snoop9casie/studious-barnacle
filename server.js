@@ -1,5 +1,5 @@
 ﻿const http = require("http");
-const PORT = 4173;
+const PORT = process.env.PORT || 4173;
 http
   .createServer((req, res) => {
     res.writeHead(404, {
